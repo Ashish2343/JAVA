@@ -52,6 +52,8 @@ public class Dijkstra_Algorithm {
     }
 
 
+
+        // 0(E + E*log v)
     private static void dijkstra(ArrayList<Edge> [] graph, int src, int V){
         PriorityQueue<Pair> pq = new PriorityQueue<>();
         int [] dist = new int[V];
@@ -78,11 +80,14 @@ public class Dijkstra_Algorithm {
                         int v = e.dest;
                         if(dist[u] + e.wt < dist[v]){
                             dist[v] = dist[u] + e.wt;
+                            pq.add(new Pair(v,dist[v]));
                         }
                 }
             }
         }
-
+        for (int i = 0; i <V ; i++) {
+            System.out.print(dist[i] + " ");
+        }
 
     }
     public static void main(String[] args) {
@@ -92,6 +97,7 @@ public class Dijkstra_Algorithm {
         createGraph(graph);
 
 
+        dijkstra(graph,0,V);
 
     }
 }

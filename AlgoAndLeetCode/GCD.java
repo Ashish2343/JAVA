@@ -2,7 +2,7 @@ package AlgoAndLeetCode;
 // Euclid's Algorithm
 public class GCD {
     public static void main(String[] args) {
-        int x = GCD(12,33);
+        int x = GCD(2,12);
         System.out.println(x);
     }
     public static int GCD(int a, int b){

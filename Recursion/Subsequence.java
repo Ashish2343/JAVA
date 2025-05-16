@@ -3,8 +3,8 @@ package Recursion;
 public class Subsequence {
     public static void main(String[] args) {
         String s = "abc";
-        //subseq("",s);
-        subseqASCII("",s);
+        subseq("",s);
+        //subseqASCII("",s);
     }
     static void subseq(String p, String up){
         if(up.isEmpty()){

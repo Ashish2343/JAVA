@@ -73,7 +73,7 @@ public class SimpleBinaryTree {
                                 q.add(currNode.right);
                             }
                         }
-                    }
+                        }
                 }
             int countofNodes(Node root){
                 if(root == null)   return 0;

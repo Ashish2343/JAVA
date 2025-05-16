@@ -1,6 +1,6 @@
 package DS_LAB;
 
-public class Exp8_B {
+public class Exp7 {
     private static class Node{
         Node next;
         int data;
